@@ -7,23 +7,62 @@ Humans have a fundamental need for social connection. A vast literature strongly
 
 All studies used largely identically formatted scripts. Data cleaning and analysis were handled by separate `.Rmd` files for each study as described below.
 
+## File Structure
+```
+virtual-interaction-well-being/
+├─ study1/
+│  ├─ prolific/
+│  │  ├─ data/
+│  │  ├─ figures/
+│  │  ├─ scripts/
+...
+├─ study1_pilot/
+│  ├─ princeton/
+│  │  ├─ data/
+│  │  ├─ figures/
+│  │  ├─ scripts/
+│  │  ...
+│  ├─ uchicago/
+│  │  ├─ data/
+│  │  ├─ figures/
+│  │  ├─ scripts/
+...
+├─ study2/
+│  ├─ personproject/
+│  │  ├─ scripts/
+│  │  ├─ data/
+│  │  ├─ figures/
+...
+├─ study2_pilot/
+│  ├─ data/
+│  ├─ figures/
+│  ├─ scripts/
+├─ virtual-interaction-well-being.Rproj
+```
+
 ## Study 1
 
 We recruited a sample of *N* = 999 participants through Prolific who 
 
-[`S1_clean-wrangle.Rmd`][1]: Study 1 script for cleaning data. <br>
-[`S1_analyze.Rmd`][2]: Study 1 script for cleaning data.
+[`study1-clean_wrangle.Rmd`][1]: R Markdown script for cleaning Study 1 data. <br>
+[`study1_analyze.Rmd`][2]: R Markdown script for analyzing and plotting Study 1 data.
 
 
 ## Study 2
 
-[`S2_clean-wrangle.Rmd`][3]: Study 2 script for cleaning data. <br>
-[`S2_analyze.Rmd`][4]: Study 2 script for cleaning data.
+[`study2-clean_wrangle.Rmd`][3]: R Markdown script for cleaning Study 2 data. <br>
+[`study2-analyze.Rmd`][4]: R Markdown script for analyzing and plotting Study 2 data.
 
 ## Supplement
 
-[`S0_clean-wrangle.Rmd`][5]: Script for cleaning data. <br>
-[`S0_analyze.Rmd`][6]: Script for analyzing pilot data. 
+[`study1_pilot_princeton-clean_wrangle.Rmd`][5]: R Markdown script for cleaning Study 1 pilot data (Princeton).<br>
+[`study1_pilot_princeton-analyze.Rmd`][6]: R Markdown script for analyzing and plotting Study 1 pilot data (Princeton).
+
+[`study1_pilot_uchicago-clean_wrangle.Rmd`][5]: R Markdown script for cleaning Study 1 pilot data (UChicago).<br>
+[`study1_pilot_uchicago-analyze.Rmd`][6]: R Markdown script for analyzing and plotting Study 1 pilot data (UChicago).
+
+[`study2_pilot-clean_wrangle.Rmd`][5]: R Markdown script for cleaning Study 2 pilot data (Person Project).<br>
+[`study2_pilot-analyze.Rmd`][6]: R Markdown script for analyzing and plotting Study 2 pilot data (Person Project).
 
 [1]: https://github.com/1nathanliang/virtual_interaction_covid/main/S1_clean-wrangle.Rmd
 [2]: https://github.com/1nathanliang/virtual_interaction_covid/main/S1_analyze.Rmd
